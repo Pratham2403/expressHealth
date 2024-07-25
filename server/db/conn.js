@@ -5,7 +5,7 @@ require("dotenv").config();
 
 
 const client = mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
   })
   .then(() => {
